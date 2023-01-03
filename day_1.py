@@ -1,19 +1,4 @@
-# 🚨 Don't change the code below 👇
-a = input("a: ")
-b = input("b: ")
-# 🚨 Don't change the code above 👆
-
-####################################
-#Write your code below this line 👇
-
-x = a
-a = b
-b = x
-
-
-#Write your code above this line 👆
-####################################
-
-# 🚨 Don't change the code below 👇
-print("a: " + a)
-print("b: " + b)
+print("Welcome to the Band Name Generator.")
+a = input("What's the name of the city you grew up in? ")
+b = input("What's your pet's name? ")
+print("Your band name could be " + a + " "+ b)
