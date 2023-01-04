@@ -1,10 +1,15 @@
 # 🚨 Don't change the code below 👇
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
+age = input("What is your current age? ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
 
-bmi = int(float(weight) / (float(height)**2))
+life = 90 - int(age)
 
-print(bmi)
+life_days = life * 365
+
+life_weeks = life * 52
+
+life_months = life * 12
+
+print(f"You have {life_days} days, {life_weeks} weeks, and {life_months} months left.")
