@@ -15,6 +15,6 @@ tip = (float(input("How much tip would you like to give? 10, 12, or 15? ")) / 10
 
 slip = float(input("How many people to split the bill? "))
 
-each = round((total / slip) * tip, 2)
+each = "{:.2f}".format((total / slip) * tip)
 
 print(f"Each person should pay: ${each}")
