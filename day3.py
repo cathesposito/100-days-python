@@ -27,20 +27,21 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
-answer1 = input("Are you going 'Left' or 'Right'?\n")
+answer1 = input("Are you going 'Left' or 'Right'?\n").lower()
 
-if answer1 == "left" or answer1=="Left":
-    answer2 = input("Are you going to 'Swim' or 'Wait'?\n")
-    if answer2 == "Wait" or answer2 == "wait":
-        answer3 = input("Which door? 'Red', 'Blue' or 'Yellow'.\n")
+if answer1 == "left":
+    answer2 = input("Are you going to 'Swim' or 'Wait'?\n").lower()
 
-        if answer3 == "Red" or answer3 == "red":
+    if answer2 == "wait":
+        answer3 = input("Which door? 'Red', 'Blue' or 'Yellow'.\n").lower()
+
+        if answer3 == "red":
             print("Burned by fire.\nGame over.")
 
-        elif answer3 == "Blue" or answer3 == "blue":
+        elif answer3 == "blue":
             print("Eaten by Beasts.\nGame over.")
 
-        elif answer3 == "Yellow" or answer3 == "yellow":
+        elif answer3 == "yellow":
             print("You win!")
 
         else:
