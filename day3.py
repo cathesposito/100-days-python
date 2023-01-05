@@ -6,41 +6,36 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 
+love_score = name1 + name2
 
-name1 = name1.lower()
-name2 = name2.lower()
+love_score = love_score.lower()
 
-count_t_1 = name1.count('t')
-count_r_1 = name1.count('r')
-count_u_1 = name1.count('u')
-count_e_1 = name1.count('e')
+count_t = love_score.count('t')
+count_r = love_score.count('r')
+count_u = love_score.count('u')
+count_e = love_score.count('e')
 
-count_t_2 = name2.count('t')
-count_r_2 = name2.count('r')
-count_u_2 = name2.count('u')
-count_e_2 = name2.count('e')
+count_l = love_score.count('l')
+count_o = love_score.count('o')
+count_v = love_score.count('v')
+count_e = love_score.count('e')
 
-total_true = count_t_1 + count_r_1 + count_u_1 + \
-    count_e_1 + count_t_2 + count_r_2 + count_u_2 + count_e_2
+total_true = count_t + count_r + count_u + \
+    count_e
+    
+total_love = count_l + count_o + count_v + \
+    count_e
 
-count_l_1 = name1.count('l')
-count_o_1 = name1.count('o')
-count_v_1 = name1.count('v')
-count_e_1 = name1.count('e')
+love_score = int(str(total_true) + str(total_love))
 
-count_l_2 = name2.count('l')
-count_o_2 = name2.count('o')
-count_v_2 = name2.count('v')
-count_e_2 = name2.count('e')
+if love_score < 10 or love_score > 90:
 
-total_love = count_l_1 + count_o_1 + count_v_1 + \
-    count_e_1 + count_l_2 + count_o_2 + count_v_2 + count_e_2
-
-love_score = str(total_true) + str(total_love)
-
-if int(love_score) < 10 or int(love_score) > 90:
     print(f"Your score is {love_score}, you go together like coke and mentos.")
-elif int(love_score) > 40 and int(love_score) < 50:
+
+elif love_score >= 40 and love_score <= 50:
+
     print(f"Your score is {love_score}, you are alright together.")
+
 else:
+
     print(f"Your score is {love_score}.")
