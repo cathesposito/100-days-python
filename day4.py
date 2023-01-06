@@ -1,13 +1,15 @@
-#Remember to use the random module
-#Hint: Remember to import the random module here at the top of the file. 🎲
-
-#Write the rest of your code below this line 👇
-
+# Import the random module here
 import random
 
-toss = random.randint(0, 1)
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
 
-if toss == 0:
-    print("Heads")
-else:
-    print("Tails")
+#Write your code below this line 👇
+
+luckyest = random.randint(0, len(names))
+
+name = names[luckyest]
+
+print(f"{name} is going to buy the meal today!")
