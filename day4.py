@@ -8,7 +8,7 @@ names = names_string.split(", ")
 
 #Write your code below this line 👇
 
-luckyest = random.randint(0, len(names))
+luckyest = random.randint(0, (len(names)-1))
 
 name = names[luckyest]
 
